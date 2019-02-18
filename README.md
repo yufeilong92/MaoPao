@@ -1,4 +1,28 @@
 # MaoPao
+
+```
+   public void maopao() {
+        int b[] = {11, 32, 23, 4, 35, 56, 27, 18, 9};
+        int temp;
+        int length = b.length;
+        for (int i = 0; i < length - 1; i++) {
+            for (int j = i+1; j < length; j++) {
+                if (b[j]<b[i]){
+                    temp=b[i];
+                    b[i]=b[j];
+                    b[j]=temp;
+                }
+            }
+        }
+        StringBuffer buffer = new StringBuffer();
+        for (int i = 0; i < length; i++) {
+            buffer.append(""+b[i]);
+            buffer.append(",");
+        }
+        System.out.println(""+buffer.toString());
+    }
+```
+
 ```
  int[] a = {12, 1, 11, 3, 4, 1, 6, 7, 8, 9, 2, 5};
         int temp;
